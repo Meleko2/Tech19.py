@@ -1,71 +1,77 @@
+#ZADANIE 1
 print("Zadanie 1")
 for i in range(1,31):
     print(i, end=" ")
-print(" ")
-
-
-print("Zadanie 2")
-a = int(input("Podaj liczbe: "))
-for i in range(1 ,a):
-    if i%2==1:
-        print(i**2, end=" ")
 print(' ')
 
 
+#ZADANIE 2
+print("Zadanie 2")
+for i in range(1,100):
+    if i%2==1:
+        print(f"{i}^2 = {i**2}")
+print(' ')
+
+
+#ZADANIE 3
 print("Zadanie 3")
 for i in range(1000,10000):
-    if i%379==0:
+    if i%379:
         print(i, end=" ")
-print(" ")
-
-
-print("Zadanie 4")
-for i in range(100,1000):
-    if i%5==0 or i%6==0 or i%11==0:
-        print(i, end=" ")
-print(" ")
-
-
-print("Zadanie 5")
-suma=0
-a = int(input())
-for i in range(1, a):
-    b = int(input())
-    suma = suma + i
-print(suma)
-
-
-print("Zadanie 6")
-suma=0
-k = int(input("Podaj liczbe: "))
-for i in range(1, k):
-    if i%2==0:
-        suma=suma+i
-print(suma)
-print(" ")
-
-
-print("Zadanie 7")
-suma=0
-m = int(input("Podaj liczbe: "))
-for i in range(1, m):
-    if i%2==1 and i>9 and 1<100:
-        suma=suma+i
-print(suma)
-print(" ")
-
-
-print("Zadanie 8")
-W0 = int(input())
-L = int(input())
-WX = 0
-suma = W0
-for i in range(0, L * 12):
-    WX = suma * 0.06 * (1/12)
-    suma = suma + WX
-print(round(suma))
 print(' ')
 
+
+#ZADANIE 4
+print("Zadanie 4")
+for i in range(100,1000):
+    if i%5 == 0 or i%6 == 0 or i%11 == 0:
+        print(i, end=" ")
+print(' ')
+
+
+#ZADANIE 5
+print("Zadanie 5")
+suma = 0
+n = int(input("Ile liczb chcesz wypisac: "))
+for i in range(1, n+1):
+    n_liczb = int(input("Podaj liczbe: "))
+    suma = suma + i
+print(suma)
+print(' ')
+
+
+#ZADANIE 6
+print("Zadanie 6")
+k = int(input("Podaj liczbe: "))
+for i in range(2, (k*2)+2,2):
+    suma = suma + i
+print(suma)
+print(' ')
+
+
+#ZADANIE 7
+print("Zadanie 7")
+m = int(input("Podaj liczbe: "))
+for i in range(11, (m*2)+2, 11):
+    suma = suma + i
+print(suma)
+print(' ')
+
+
+#ZADANIE 8
+print("Zadanie 8")
+W0 = int(input("Podaj kapital poczatkowy: "))
+L = int(input("Podaj ile lat ma trwac inwestycja: "))
+WK = 0
+suma = W0
+for i in range(1 , L*12):
+    WX=suma*0.06*(1/12)
+    suma = suma+WX
+print(f" Kapital po tym czasie bedzie wynosil: {round(suma)}")
+print(' ')
+
+
+#ZADANIE 9
 print("Zadanie 9")
 a = int(input("Podaj ilosc liczb: "))
 b = 21
@@ -75,11 +81,6 @@ for i in range(0, a+1):
         suma = suma + j
         j = j + 100
 print(f"Suma to: {suma}")
-
-
-from math import sqrt
-print("Zadanie 10")
-#IDK
 
 
 
