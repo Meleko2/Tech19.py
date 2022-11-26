@@ -55,14 +55,3 @@ while 1:
       flaga=False
     if flaga:
       print(x, end=" ")
-      
-
-
-    
-  
-    
-
-
-
-
-
