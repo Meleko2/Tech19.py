@@ -44,7 +44,6 @@ while True:
   if k == 0:
     break
 
-
 #3-2 sposob
 n = int(input())
 x=2
