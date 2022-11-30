@@ -16,3 +16,13 @@ while b > 0:
   a = b
   b = a%b
 print(f"NWD tych liczb to {a}")
+
+#Tabelka jak to dziala w odejmowaniu
+
+
+
+
+#Tabelka jak to dziala w modulo
+while b>0:
+  print(f"{a}\t\t{b}\t\t{a%b}")
+  
