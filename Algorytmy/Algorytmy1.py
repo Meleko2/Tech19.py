@@ -1,4 +1,4 @@
-#algorytm sprawdzajacy czy liczba jest pierwsza
+H#algorytm sprawdzajacy czy liczba jest pierwsza
 # wersja 1
 n = int(input())
 for i in range(2,n):

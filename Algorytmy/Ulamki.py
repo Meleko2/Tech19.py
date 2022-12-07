@@ -6,22 +6,25 @@ b = int(input("Podaj mianownik:"))
 c = int(input("Podaj licznik:"))
 d = int(input("Podaj mianownik: "))
 
-mianownik_w1 = b
-mianonik_w2 = d
-
-#nww / b = iloczyn gotowy
+#nww / b = licznik gotowy
 
 ilocz = b*d
+x = b
+y = d
 
-while b!=d:
-  if d>b: 
-    d-=b
+while x!=y:
+  if y>x: 
+    y-=x
   else:
-    b-=d
+    x-=y
 
-wsp_mian = ilocz//b
+wsp_mian = ilocz//x
 
+#nww / b = licznik gotowy
+#To bylo nie wiadome
+e = (wsp_mian//b) * a
+f = (wsp_mian//d) * c
 
-licznik = licznik1 + licznik2
+licznik = e+f
 
 print(f"{licznik} \ {wsp_mian}")
