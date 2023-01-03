@@ -1,5 +1,3 @@
-from math import fabs
-
 # Zadanie 1
 print("Zadanie 1")
 a = int(input("Liczba1: "))
@@ -115,10 +113,10 @@ n = int(input("Podaj ile powtorzen ma miec ciag: "))
 suma = 0
 rytm = 2
 for i in range(n):
-    if i % 2 == 0:
+    if i % 2 != 0:
         rytm *= -1
         suma += rytm
-        fabs(rytm)
+        rytm *= -1
     else:
         suma += rytm
     rytm += 3
@@ -136,7 +134,7 @@ for i in range(2, n+2):
     if i % 2 == 0:
         rytm *= -1
         iloczyn *= rytm
-        fabs(rytm)
+        rytm *= -1
     else:
         iloczyn *= rytm
 print(f"Iloczyn n elementow ciagu zakreconego wynosi: {iloczyn}")
@@ -146,7 +144,7 @@ print()
 # Zadanie 10
 print("Zadanie 10")
 n = int(input("Jak dlugi ma byc ciąg:"))
-iloczyn = 0
+suma = 0
 silnia = 1
 rytm = 1
 for i in range(n):
@@ -154,7 +152,7 @@ for i in range(n):
     silnia *= rytm
     rytm += 1
 
-print(f"Iloczyn n elementow ciagu siłaczy wynos: {iloczyn}")
+print(f"Iloczyn n elementow ciagu siłaczy wynos: {suma}")
 
 print()
 
