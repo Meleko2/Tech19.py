@@ -59,8 +59,8 @@ for i in range(10, 20):
     x = m
     y = i
     nwd = NWD(x, y)
-if nwd == 1:
-    print(f"Wzglednie pierwsze: {m}, {i}")
+    if nwd == 1:
+        print(f"Wzglednie pierwsze: {m}, {i}")
 
 # Zadania 6
 a = int(input("Licznik: "))
