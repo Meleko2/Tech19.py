@@ -74,12 +74,18 @@ print(f"Skrocony ulamek {x}/{y} == {a}/{b}")
 # Zadania 7
 a = int(input("Licznik: "))
 b = int(input("Mianownik: "))
-if a % b > 0:
+if a % b == 0:
+    calosci = a//b
+    print(f"Wyciagniete calosci z tego ulamka: {calosci}")
+if a < b:
+    print("Ulamek jest wlasciwy")
+else:
     calosci = a // b
     reszta = a % b
-    print(f"Wyciagniete calosci z tego ulamka: {calosci} i {reszta}/{b}")
-else:
-    print("Ulamek jest wlasciwy")
+    dzielnik = NWD(reszta, b)
+    skroconaReszta = reszta/dzielnik
+    skroconyLicznik = b/dzielnik
+    print(f"Wyciagniete calosci z tego ulamka: {calosci} i {skroconaReszta}/{skroconyLicznik}")
 
 # Zadania 8
 T = []
